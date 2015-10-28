@@ -1,0 +1,28 @@
+{
+  "name": "hcardBuilder",
+  "version": "0.0.0",
+  "dependencies": {
+    "angular-touch": "1.2.29",
+    "jquery": "~1.11.3",
+    "bootstrap": "~3.3.5",
+    "angular-bootstrap": "0.12.0",
+    "animate.css": "~3.4.0",
+    "angular": "1.2.29"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "less/bootstrap.less",
+        "dist/fonts/glyphicons-halflings-regular.eot",
+        "dist/fonts/glyphicons-halflings-regular.svg",
+        "dist/fonts/glyphicons-halflings-regular.ttf",
+        "dist/fonts/glyphicons-halflings-regular.woff",
+        "dist/fonts/glyphicons-halflings-regular.woff2"
+      ]
+    }
+  },
+  "resolutions": {
+    "jquery": "~1.11.3",
+    "angular": "1.2.29"
+  }
+}

@@ -1,0 +1,191 @@
+@import "variables";
+
+.container {
+  max-width: 980px;
+  min-width: 375px;
+  font-family: @font-family-sans;
+}
+
+.hCardBuilder {
+  &__section {
+    &__left {
+      padding: 50px;
+
+      h1 {
+        color: @color-dark-blue;
+        font-size: 28px;
+        font-weight: 700;
+      }
+    }
+
+    &__right {
+      background-color: #E7E9EC;
+      padding: 40px;
+      position: relative;
+      height: 590px;
+    }
+  }
+
+  &__form {
+    h2 {
+      padding-bottom: 4px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid #C4CBCE;
+      font-size: 10px;
+      font-weight: 600;
+      color: @color-grey;
+      text-transform: uppercase;
+    }
+
+    &__label {
+      font-size: 12px;
+      text-transform: uppercase;
+      margin-bottom: 2px;
+      color: #516475;
+      font-weight: normal;
+    }
+
+    &__field {
+
+    }
+
+    &__button {
+      margin: 0 auto;
+      text-align: center;
+      padding: 20px;
+
+      button {
+        font-size: 20px;
+        padding: 5px 30px;
+        border-radius: 5px;
+        background-color: @color-light-blue;
+        border: none;
+        border-bottom: 2px solid @color-blue;
+        color: @color-white;
+      }
+    }
+  }
+
+  &__preview {
+    overflow: auto;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    padding-top: 15%;
+
+    .vcard {
+      max-width: 500px;
+      min-width: 375px;
+    }
+
+    &__label {
+      font-size: 10px;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+      color: #516475;
+      font-weight: normal;
+      padding: 0px;
+      min-height: 16px;
+    }
+
+    &__value {
+      color: @color-dark-grey;
+      font-size: 16px;
+      margin-bottom: 4px;
+      word-wrap: break-word;
+      padding: 0px;
+      min-height: 18px;
+      line-height: 90%;
+    }
+
+    .row {
+      border-bottom: 1px solid #C4CBCE;
+      margin: 0px;
+      padding-top: 15px;
+      display: block;
+    }
+
+    &__vcard-section-title {
+      color: @color-white;
+      background-color: @color-dark-blue;
+      font-size: 24px;
+      font-weight: 500;
+      padding: 15px;
+      display: inline-block;
+      width: 100%;
+      min-height: 70px;
+      line-height: 95%;
+    }
+
+    &__vcard-section-contents {
+      background-color: @color-white;
+      color: @color-dark-grey;
+      padding: 20px;
+      border-bottom: 2px solid @color-dark-grey2;
+
+      a {
+        color: @color-dark-grey;
+      }
+    }
+
+    .vcard {
+      padding: 0px 40px 30px 40px;
+    }
+
+    h2 {
+      text-align: right;
+      text-transform: uppercase;
+      font-size: 16px;
+      font-weight: 600;
+      color: #C4CBCE;
+      margin-right: 40px;
+    }
+
+    .fn {
+      font-size: 28px;
+      font-weight: 600;
+      display: inline-block;
+      padding-top: 10px;
+    }
+
+    .tel {
+      speak-punctuation: code;
+      speak-numeral: digits;
+    }
+  }
+
+  @media (max-width: 768px) {
+    &__preview {
+      padding-top: 20px;
+
+      h2 {
+        text-align: center;
+      }
+
+      .vcard {
+        .row {
+          .col-sm-3 {
+            width: 20%;
+            display: inline-block;
+            text-align: left;
+          }
+          .col-sm-9 {
+            width: 75%;
+            display: inline-block;
+            text-align: left;
+          }
+        }
+      }
+    }
+  }
+}
+
+input.hCardBuilder__form_field {
+  width: 100%;
+  color: @color-dark-grey;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  padding: 4px;
+  border: 1px solid #b0b8bc;
+  font-size: 16px;
+}
